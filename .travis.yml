@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 7
+script:
+- npm install
+- npm run test
+deploy:
+  provider: heroku
+  api_key:
+    secure: WECHyOZeOsu6VY1Zx+ErqRSkfCw2O4P2r/8gQ1JNWzC3q/VhfvStjmNzwOHNTpG+3BU6UtQFPeXJZuOL0lk8MrhnXrGJLacnUs4YUp+oIpqsYcAG8MQxaGcUZgShsJJUTMZwYJycvkdzkFJLkB5lYEUfv35F9zI0rS7ICxf4zFhY3ZBBi47F7telKha5fOleJ98JubkjUob0GKb5rCgocRkRNaB/ziFnJ71l2Hj9+0WEQ8wq0Sgte87l57GdQmt2Ip1C90aqcrSjpO3XyDUhgwAqSzFybH6Y2JwElalUOtWQ2Y7SlqlqMJ7MMGTaYxTO7Kp5ZXYspbs8h4MKpAYTy6yf4hDJLtGJlqYt1qlXNRmzZXE+29qVkuNHIRcTRhFVENBzPA38NFL/wnmEuRfwXUDm83FzGIIdlk1g1kHyf6XquoUC3mrFLgMjeAFTxv8cYdereoCGzQ1ytxJELoeKMkf5VZNubvkjCRx2si5RHr7BiVtApOntyngRc8EpicnIWwJZdl7DT3M2RyXwHIyZ2mBrRqxkmG9NIzfvVmjrgkMcxKWUXhN0NrulIgv42nfGs21uahwlTy4c1xBTVIXQraAnmlnUChcnuOYqEqj2221ftQUnCbbgTIqdahaDYcYvUn54MZKSs2NPV1gE3dCJvQ+sv3KGSe6AFsUPW/oXWsg=
+  app: travis-node-hello-world
+  on:
+    repo: Circletana/circleci-hello-world-node-js
