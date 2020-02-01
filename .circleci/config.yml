@@ -3,6 +3,8 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
+orbs:
+  codeclimate: rohanpm/codeclimate@1.0.0
 jobs:
   build:
     docker:
@@ -27,7 +29,6 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
-      - run: sudo npm install axios
 
       - save_cache:
           paths:
