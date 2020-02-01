@@ -27,7 +27,7 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
-      - run: $ sudo npm install axios
+      - run: sudo npm install axios
 
       - save_cache:
           paths:
